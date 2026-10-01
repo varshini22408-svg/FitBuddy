@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - Your Fitness Plan</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>Your 7-Day Fitness Plan</h1>
+
+    <h2>Workout Plan</h2>
+    <pre>{{ workout_plan }}</pre>
+
+    <h2>Nutrition & Recovery Tips</h2>
+    <p>{{ nutrition_tip }}</p>
+    <h2>Feedback</h2>
+
+<form action="/submit-feedback" method="post">
+    <textarea name="feedback" rows="5" placeholder="Enter your feedback" required></textarea>
+    <button type="submit">Update Plan</button>
+</form>
+
+    <a href="/">Generate Another Plan</a>
+
+</body>
+</html>

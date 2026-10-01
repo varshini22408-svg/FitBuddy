@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - All Users</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>All Users</h1>
+
+    {% for user in users %}
+        <div class="user-card">
+            <h3>{{ user.name }}</h3>
+            <p>User ID: {{ user.user_id }}</p>
+            <p>Age: {{ user.age }}</p>
+            <p>Weight: {{ user.weight }}</p>
+            <p>Goal: {{ user.goal }}</p>
+            <p>Intensity: {{ user.intensity }}</p>
+        </div>
+    {% endfor %}
+
+    <a href="/">Back to Home</a>
+s
+</body>
+</html>
